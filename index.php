@@ -61,20 +61,20 @@ else{
 </form>
 <div class="item">   
       <h3>AA</h3>
-      <a href="./data/aa.txt">file</a>
+      <a href="./data/aa.txt" download>file</a>
 </div>    
 <div class="item">
       <h3>b64</h3>
-      <a href="./data/encode.txt">file</a>
+      <a href="./data/encode.txt" download>file</a>
 </div>
 <div class="item">
       <h3>easy</h3>
-      <a href="./data/easy.txt">file</a>
+      <a href="./data/easy.txt" download>file</a>
 </div>
 <div class="item"> 
       <h3>unknown</h3>
       <h4>What the file is it?<h4>
-      <a href="./data/unknow.txt">file</a>
+      <a href="./data/FLAG" download>file</a>
 </div>    
 <div class="item">  
       <h3>find</h3>
@@ -83,12 +83,12 @@ else{
 </div>
 <div class="item">  
       <h3>nc</h3>
-      <a href="./data/nc.txt">file</a>
+      <a href="./data/nc.txt" download>file</a>
 </div>
 <div class="item">  
       <h3>pusheen</h3>
       <h4>pushenn is cute. Do you like pusheen ?<h4>
-      <a href="./data/pusheen.txt">file</a>
+      <a href="./data/pusheen.txt" download>file</a>
 </div>
 <div class="item">  
       <h3>pwn</h3>
@@ -101,12 +101,12 @@ else{
 </div> 
 <div class="item">  
       <h3>xor</h3>
-      <a href="./data/xor.c">file</a>
+      <a href="./data/xor.c" download>file</a>
 </div> 
 <div class="item">  
       <h3>cookie</h3>
       <h4>yummy<h4>
-      <a href="http://sv.duckll.tw:1337/">link</a>
+      <a href="http://sv.duckll.tw:1337">link</a>
 </div>
 <div class="item">  
       <h3>hide</h3>
