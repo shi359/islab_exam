@@ -77,7 +77,7 @@ else{
 </thead>
 <tbody>
 <?php
-$sql="SELECT * FROM member ORDER BY point";
+$sql="SELECT * FROM member ORDER BY point DESC";
 $rs = $db->query($sql);
 $rank=1;
 while($row = $rs->fetch()){
