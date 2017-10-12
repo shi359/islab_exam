@@ -73,7 +73,6 @@ else{
 <th>q11</th>
 <th>q12</th>
 <th>point</th>
-<th>lasttime</th>
 </tr>
 </thead>
 <tbody>
