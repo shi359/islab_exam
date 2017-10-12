@@ -16,7 +16,7 @@ if(isset($_SESSION['name'])){
             $_SESSION['q'.$q]=1;
             $_SESSION['point']=$row['point']+$_SESSION['point'];
             echo $point;
-            $sql="UPDATE member SET q".$q."=1 , point=".$_SESSION['point']." WHERE `name`='".$_SESSION['name']."'";
+            $sql="UPDATE member SET q".$q."=1 , point=".$_SESSION['point']." WHERE name ='".$_SESSION['name']."'";
             $rs = $db->prepare($sql);
             $rs->execute();
             header("Location: ./");

@@ -78,7 +78,7 @@ else{
 </thead>
 <tbody>
 <?php
-$sql="SELECT * FROM member ORDER BY point DESC,lasttime";
+$sql="SELECT * FROM member ORDER BY point";
 $rs = $db->query($sql);
 $rank=1;
 while($row = $rs->fetch()){
@@ -92,7 +92,6 @@ while($row = $rs->fetch()){
         echo '</th>';
     }
     echo '<th>'.$row['point'].'</th>';
-    echo '<th>'.$row['lasttime'].'</th>';
     echo '</tr>';
     $rank++;
 }
