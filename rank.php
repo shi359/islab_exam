@@ -85,7 +85,7 @@ while($row = $rs->fetch()){
     echo '<tr>';
     echo '<th>'.$rank.'</th>';
     echo '<th>'.$row['name'].'</th>';
-    for($i=1;$i<11;$i++){
+    for($i=1;$i<13;$i++){
         echo '<th>';
         if($row['q'.$i]==1)
             echo '@';
