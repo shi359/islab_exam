@@ -64,21 +64,54 @@ else{
       <a href="./data/aa.txt">file</a>
 </div>    
 <div class="item">
-      <h3>AA</h3>
-      <a href="./data/aa.txt">file</a>
+      <h3>b64</h3>
+      <a href="./data/encode.txt">file</a>
 </div>
 <div class="item">
-      <h3>AA</h3>
-      <a href="./data/aa.txt">file</a>
+      <h3>easy</h3>
+      <a href="./data/easy.txt">file</a>
 </div>
 <div class="item"> 
-      <h3>AA</h3>
-      <a href="./data/aa.txt">file</a>
+      <h3>unknown</h3>
+      <h4>What the file is it?<h4>
+      <a href="./data/unknow.txt">file</a>
 </div>    
 <div class="item">  
-      <h3>AA</h3>
-      <a href="./data/aa.txt">file</a>
-</div>                
+      <h3>find</h3>
+      <h4>find the flag<h4>
+      <a href="./data/find.zip">file</a>
+</div>
+<div class="item">  
+      <h3>nc</h3>
+      <a href="./data/nc.txt">file</a>
+</div>
+<div class="item">  
+      <h3>pusheen</h3>
+      <h4>pushenn is cute. Do you like pusheen ?<h4>
+      <a href="./data/pusheen.txt">file</a>
+</div>
+<div class="item">  
+      <h3>pwn</h3>
+      <h4>just pwn it<h4>
+      <a href="./data/pwn">file</a>
+</div>
+<div class="item">  
+      <h3>strings</h3>
+      <a href="./data/strings">file</a>
+</div> 
+<div class="item">  
+      <h3>xor</h3>
+      <a href="./data/xor.c">file</a>
+</div> 
+<div class="item">  
+      <h3>cookie</h3>
+      <h4>yummy<h4>
+      <a href="http://sv.duckll.tw:1337/">link</a>
+</div>
+<div class="item">  
+      <h3>hide</h3>
+      <a href="http://sv.duckll.tw:1337/hide.html">link</a>
+</div>                    
 <?php
 /*
 $sql="SELECT * FROM flag WHERE open=1 ORDER BY qid";
