@@ -42,16 +42,18 @@ CREATE TABLE `flag` (
 --
 
 INSERT INTO `flag` (`id`, `qid`, `name`, `content`, `hint`, `point`, `flag`, `open`) VALUES
-(1, 1, 'repeat after me', 'Just answer me what you see. <br> nc pwn.duckll.tw 7771', '', 100, 'NCYU{rem0te_c0nnect_1s_ea5y}', 1),
-(2, 2, 'Gime me the pass', '<a href="./data/give_me_the_pass">file</a> <br> nc pwn.duckll.tw 7772', '', 500, 'NCYU{Reverse_1s_ea5y_4_U}', 1),
-(3, 3, 'Overwrite', '<a href="./data/overwrite">file</a><br>nc pwn.duckll.tw 7773', '', 300, 'NCYU{asm_i5_1nterst1n8_ri8ht7?}', 1),
-(4, 4, 'No more space', '<a href="./data/no_more_space">file</a><br> nc pwn.duckll.tw 7774', '', 600, 'NCYU{a11_va1ue_i5_rea6y_f0r_U}', 1),
-(5, 5, 'Where U go?', '<a href="./data/where_U_go">file</a><br> nc pwn.duckll.tw 7775', '', 300, 'NCYU{4ddress_15_p0werfu1}', 1),
-(6, 6, 'gadget4U', '', '', 0, '', 0),
-(7, 7, 'where U cat', '', '', 0, '', 0),
-(8, 8, 'U know libc?', '', '', 0, '', 0),
-(9, 9, 'Under protector', '', '', 0, '', 0),
-(10, 10, '64bit!!!', '', '', 0, '', 0);
+(1, 1, 'AA', '<a href="./data/aa.txt">file</a>', '', 100, '', 1),
+(2, 2, 'b64', '<a href="./data/encode.txt">file</a>', '', 100, '', 1),
+(3, 3, 'easy', '<a href="./data/easy.txt">file</a>', '', 100, '', 1),
+(4, 4, 'unknown', '<a href="./data/unknow.txt">file</a>', 'What the file is it?', 100, '', 1),
+(5, 5, 'find', '<a href="./data/find.zip">file</a>', 'find the flag', 100, '', 1),
+(6, 6, 'nc', '<a href="./data/nc.txt">file</a>', '', 100, '', 1),
+(7, 7, 'pusheen', '<a href="./data/pusheen.txt">file</a>', 'pusheen is cute. Do you like pusheen ?', 100, '', 1),
+(8, 8, 'pwn', '<a href="./data/pwn">file</a>', 'just pwn it', 100, 'FLAG{BuFFer_0V3Rflow_is_too_easy}', 1),
+(9, 9, 'strings', '<a href="./data/strings">file</a>', '', 100, '', 1),
+(10, 10, 'xor', '<a href="./data/xor.c">file</a>', '', 100, '', 1),
+(11, 11, 'cookie', '<a href="http://sv.duckll.tw:1337/">link</a>', 'yummy', 100, '', 1),
+(12, 12, 'hide', '<a href="http://sv.duckll.tw:1337/hide.html">link</a>', '', 100, '', 1);
 
 -- --------------------------------------------------------
 
@@ -74,6 +76,8 @@ CREATE TABLE `member` (
   `q8` tinyint(1) NOT NULL,
   `q9` tinyint(1) NOT NULL,
   `q10` tinyint(1) NOT NULL,
+  `q11` tinyint(1) NOT NULL,
+  `q12` tinyint(1) NOT NULL,
   `point` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -81,7 +85,7 @@ CREATE TABLE `member` (
 -- 資料表的匯出資料 `member`
 --
 
-INSERT INTO `member` (`id`, `name`, `pass`, `lasttime`, `q1`, `q2`, `q3`, `q4`, `q5`, `q6`, `q7`, `q8`, `q9`, `q10`, `point`) VALUES
+INSERT INTO `member` (`id`, `name`, `pass`, `lasttime`, `q1`, `q2`, `q3`, `q4`, `q5`, `q6`, `q7`, `q8`, `q9`, `q10`, `q11`, `q12`, `point`) VALUES
 (1, 'duckll', 'd10598f58e2ebdaf185743dcae59fff0', '2016-06-09 01:37:47', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 --
