@@ -6,7 +6,7 @@ require_once('database.php');
     <!-- meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NCYU_CTF</title>
+    <title>ISLAB_CTF</title>
     <!-- css -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="starter-template.css" rel="stylesheet" type="text/css">
@@ -27,14 +27,13 @@ require_once('database.php');
           </button>
           <div id="NAVbrand" class="navbar-brand" style="padding-top:6px;">
             <img style="width:200px; height:40px; " src="logo.jpg">
-            <span> NCYU_CTF</span>
+            <span> ISLAB_CTF</span>
           </div>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="./">Problems</a></li>
             <li class="active"><a href="./rank.php">Rank</a></li>
-            <li><a href="http://pwn.duckll.tw:8022" target="_blank">Web Terminal</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
 <?php
@@ -71,6 +70,8 @@ else{
 <th>q8</th>
 <th>q9</th>
 <th>q10</th>
+<th>q11</th>
+<th>q12</th>
 <th>point</th>
 <th>lasttime</th>
 </tr>

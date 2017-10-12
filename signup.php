@@ -6,7 +6,7 @@ require_once('database.php');
     <!-- meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NCYU_CTF</title>
+    <title>ISLAB_CTF</title>
     <!-- css -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="starter-template.css" rel="stylesheet" type="text/css">
@@ -26,7 +26,7 @@ require_once('database.php');
           </button>
           <div id="NAVbrand" class="navbar-brand" style="padding-top:6px;">
             <img style="width:200px; height:40px; " src="logo.jpg">
-            <span> NCYU_CTF</span>
+            <span> ISLAB_CTF</span>
           </div>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

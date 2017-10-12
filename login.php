@@ -15,6 +15,8 @@ if(md5(sha1(md5($_POST['pass'])))===$row['pass']){
 	$_SESSION['q8']=$row['q8'];
 	$_SESSION['q9']=$row['q9'];
 	$_SESSION['q10']=$row['q10'];
+	$_SESSION['q11']=$row['q11'];
+	$_SESSION['q12']=$row['q12'];
 	$_SESSION['point']=$row['point'];
 	header("Location: ./");
 	exit;

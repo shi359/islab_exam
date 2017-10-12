@@ -52,8 +52,8 @@ INSERT INTO `flag` (`id`, `qid`, `name`, `content`, `hint`, `point`, `flag`, `op
 (8, 8, 'pwn', '<a href="./data/pwn">file</a>', 'just pwn it', 100, 'FLAG{BuFFer_0V3Rflow_is_too_easy}', 1),
 (9, 9, 'strings', '<a href="./data/strings">file</a>', '', 100, '', 1),
 (10, 10, 'xor', '<a href="./data/xor.c">file</a>', '', 100, '', 1),
-(11, 11, 'cookie', '<a href="http://sv.duckll.tw:1337/">link</a>', 'yummy', 100, '', 1),
-(12, 12, 'hide', '<a href="http://sv.duckll.tw:1337/hide.html">link</a>', '', 100, '', 1);
+(11, 11, 'cookie', '<a href="http://sv.duckll.tw:1337/">link</a>', 'yummy', 100, 'FLAG{you_know_cookie_now}', 1),
+(12, 12, 'hide', '<a href="http://sv.duckll.tw:1337/hide.html">link</a>', '', 100, 'FLAG{B3w4r3_0f_th3_h1dd3n_r0w}', 1);
 
 -- --------------------------------------------------------
 
