@@ -1,6 +1,6 @@
 <?php
 require_once('./database.php');
-if($_POST['code']!='duckll.tw'){
+if($_POST['code']!='islab2017'){
 	echo "<script type=\"text/javascript\">";
 	echo 'alert("邀請碼錯誤!");';
 	echo "history.go(-1);";
