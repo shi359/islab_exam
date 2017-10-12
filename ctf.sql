@@ -42,16 +42,16 @@ CREATE TABLE `flag` (
 --
 
 INSERT INTO `flag` (`id`, `qid`, `name`, `content`, `hint`, `point`, `flag`, `open`) VALUES
-(1, 1, 'AA', '<a href="./data/aa.txt">file</a>', '', 100, '', 1),
-(2, 2, 'b64', '<a href="./data/encode.txt">file</a>', '', 100, '', 1),
-(3, 3, 'easy', '<a href="./data/easy.txt">file</a>', '', 100, '', 1),
-(4, 4, 'unknown', '<a href="./data/unknow.txt">file</a>', 'What the file is it?', 100, '', 1),
-(5, 5, 'find', '<a href="./data/find.zip">file</a>', 'find the flag', 100, '', 1),
-(6, 6, 'nc', '<a href="./data/nc.txt">file</a>', '', 100, '', 1),
-(7, 7, 'pusheen', '<a href="./data/pusheen.txt">file</a>', 'pusheen is cute. Do you like pusheen ?', 100, '', 1),
+(1, 1, 'AA', '<a href="./data/aa.txt">file</a>', '', 100, 'FLAG{C00l_u_know_@@encod3!}', 1),
+(2, 2, 'b64', '<a href="./data/encode.txt">file</a>', '', 100, 'FLAG{Do_u_know_b4s3_64_?}', 1),
+(3, 3, 'easy', '<a href="./data/easy.txt">file</a>', '', 100, 'FLAG{CAESAR CIPHER IS THE EASIEST CIPHER}', 1),
+(4, 4, 'unknown', '<a href="./data/unknow.txt">file</a>', 'What the file is it?', 100, 'FLAG{W0W!!_H0w_did_you_kn0w_7he_f1l3_typ3_?}', 1),
+(5, 5, 'find', '<a href="./data/find.zip">file</a>', 'find the flag', 100, "FLAG{find_i3_f4s7er_i3n't_it?_ha_ha_ha}", 1),
+(6, 6, 'nc', '<a href="./data/nc.txt">file</a>', '', 100, 'FLAG{nc_i3_sooo_e43y}', 1),
+(7, 7, 'pusheen', '<a href="./data/pusheen.txt">file</a>', 'pusheen is cute. Do you like pusheen ?', 100, 'FLAG{Pusheen OIOOOIIOOIOOIIOOOIOOOOOIOIOOOIII Cute}', 1),
 (8, 8, 'pwn', '<a href="./data/pwn">file</a>', 'just pwn it', 100, 'FLAG{BuFFer_0V3Rflow_is_too_easy}', 1),
-(9, 9, 'strings', '<a href="./data/strings">file</a>', '', 100, '', 1),
-(10, 10, 'xor', '<a href="./data/xor.c">file</a>', '', 100, '', 1),
+(9, 9, 'strings', '<a href="./data/strings">file</a>', '', 100, 'FLAG{u_g0t_m3!}', 1),
+(10, 10, 'xor', '<a href="./data/xor.c">file</a>', '', 100, 'FLAG{A XOR B XOR A EQUALS A}', 1),
 (11, 11, 'cookie', '<a href="http://sv.duckll.tw:1337/">link</a>', 'yummy', 100, 'FLAG{you_know_cookie_now}', 1),
 (12, 12, 'hide', '<a href="http://sv.duckll.tw:1337/hide.html">link</a>', '', 100, 'FLAG{B3w4r3_0f_th3_h1dd3n_r0w}', 1);
 

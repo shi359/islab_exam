@@ -56,7 +56,7 @@ else{
     <div class="container">
       <div class="starter-template">
 <form action="flag.php" method="post">
-<input name="flag" placeholder="Send flag here like NCYU{***}" required style="width:90%;">
+<input name="flag" placeholder="Send flag here like FLAG{***}" required style="width:90%;">
 <input type="submit" style="float:right;">
 </form>
 <div class="item">   
