@@ -26,7 +26,6 @@ require_once('database.php');
             <span class="icon-bar"></span>
           </button>
           <div id="NAVbrand" class="navbar-brand" style="padding-top:6px;">
-            <img style="width:200px; height:40px; " src="logo.jpg">
             <span> ISLAB_CTF</span>
           </div>
         </div>
