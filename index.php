@@ -34,8 +34,7 @@ require_once('database.php');
             <li class="active"><a href="./">Problems</a></li>
             <li><a href="./rank.php">Rank</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-right"> 
-    <li><a href="./signup.php">Sign up</a></li>  
+          <ul class="nav navbar-nav navbar-right">  
    
 <?php
 if(isset($_SESSION['name'])){
@@ -58,7 +57,7 @@ else{
       <div class="starter-template">
 <form action="flag.php" method="post">
 <input name="flag" placeholder="Send flag here like FLAG{***}" required style="width:90%;">
-<input type="submit" style="float:right;">
+<input type="submit" style="float:right;" class="submit" value="send">
 </form>
 <div class="item">
     <div class="challenge">      
