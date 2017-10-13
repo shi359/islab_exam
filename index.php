@@ -59,7 +59,7 @@ else{
 <input name="flag" placeholder="Send flag here like FLAG{***}" required style="width:90%;">
 <input type="submit" style="float:right;" class="submit" value="send">
 </form>
-<!-- <div class="item">
+<div class="item">
     <div class="challenge">      
       <h3>AA</h3>
       <a href="./data/aa.txt" download>file</a>
@@ -130,9 +130,9 @@ else{
       <h3>hide</h3>
       <a href="http://sv.duckll.tw:1337/hide.html">link</a>
     </div>  
-</div>  -->                   
+</div>                    
 <?php
-
+/*
 $sql="SELECT * FROM flag WHERE open=1 ORDER BY qid";
 $rs = $db->query($sql);
 while($row = $rs->fetch()){
@@ -146,6 +146,7 @@ while($row = $rs->fetch()){
     echo '</div>'
     echo '</div>';
 }
+*/
 ?> 
 <div style="clear:both;"></div>
       </div>
