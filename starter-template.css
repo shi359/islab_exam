@@ -1,6 +1,6 @@
 body {
 	padding-top: 50px;
-	background-color:#666;
+	background-color:white;
     font-family: Roboto,"PingFang TC","黑體-繁","Heiti TC","蘋果儷中黑","Apple LiGothic Medium","微軟正黑體","Microsoft JhengHei",sans-serif;
 }
 img{
@@ -20,17 +20,22 @@ div{
 td{
     text-align: center;
 }
+
 .starter-template {
 	padding: 40px 15px;
 	text-align: left;
 	font-size: large;
-	background-color:#999;
+	/*background-color:#999;*/
 
 	border-radius: 10px;  /*圓角*/
 
     -moz-border-radius: 10px;
 
     -webkit-border-radius: 10px;
+}
+.title-span{
+    font-size: 20px;
+    line-height: 35px;
 }
 .ep_like {
     display: block;
@@ -49,10 +54,37 @@ td{
     height: 200px;
     margin: 1%;
     line-height: 30px;
-    background-color: #fff;
+    background-color: #A9A9A9;
     overflow: hidden;
     text-overflow : ellipsis;
 }
 .pass{
     background-color: #8f8;
 }
+.challenge{
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    height: 150px;
+
+}
+.submit {
+    border: none;
+    background-color: #0066ff;
+    font-size: 15px;
+    padding: 6px 20px;
+    margin-left: 5px; 
+    color: white;
+    cursor: pointer;
+}
+
+.small-submit{
+    border: none;
+    background-color: #0066ff;
+    font-size: 15px;
+    padding: 3px 20px;
+    margin-left: 5px; 
+    color: white;
+    cursor: pointer;
+}
+

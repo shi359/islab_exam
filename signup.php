@@ -15,7 +15,7 @@ require_once('database.php');
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-reverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -25,7 +25,7 @@ require_once('database.php');
             <span class="icon-bar"></span>
           </button>
           <div id="NAVbrand" class="navbar-brand" style="padding-top:6px;">
-            <span> ISLAB_CTF</span>
+            <span class="title-span"> ISLAB_CTF</span>
           </div>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -51,5 +51,12 @@ require_once('database.php');
         </form>
       </div>
     </div>
+     <!-- Footer -->
+    <footer style="background-color: black">
+      <div class="container">
+        <p class="m-0 text-center" style="color:white">Copyright &copy; DUCKLL</p>
+      </div>
+      <!-- /.container -->
+    </footer>
   </body>
 </html>

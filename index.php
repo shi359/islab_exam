@@ -16,7 +16,7 @@ require_once('database.php');
   </head>
   <body>
     <form action="login.php" method="post">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -26,7 +26,7 @@ require_once('database.php');
             <span class="icon-bar"></span>
           </button>
           <div id="NAVbrand" class="navbar-brand" style="padding-top:6px;">
-            <span> ISLAB_CTF</span>
+            <span class="title-span"> ISLAB_CTF</span>
           </div>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -34,7 +34,9 @@ require_once('database.php');
             <li class="active"><a href="./">Problems</a></li>
             <li><a href="./rank.php">Rank</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">    
+          <ul class="nav navbar-nav navbar-right"> 
+    <li><a href="./signup.php">Sign up</a></li>  
+   
 <?php
 if(isset($_SESSION['name'])){
     echo '<li><a>'.$_SESSION['name'].'</a></li>';
@@ -44,7 +46,7 @@ else{
     echo '<li><a href="./signup.php">Sign up</a></li>';
     echo '<li style="top:12px;"><input type="text" name="name" placeholder="id"></li>';
     echo '<li style="top:12px;"><input type="password" name="pass" placeholder="pass"></li>';
-    echo '<li style="top:12px;"><input type="submit"></li>';
+    echo '<li style="top:12px;"><input type="submit" class="small-submit" value="send"></li>';
 }
 ?> 
           </ul>
@@ -58,58 +60,77 @@ else{
 <input name="flag" placeholder="Send flag here like FLAG{***}" required style="width:90%;">
 <input type="submit" style="float:right;">
 </form>
-<div class="item">   
+<div class="item">
+    <div class="challenge">      
       <h3>AA</h3>
       <a href="./data/aa.txt" download>file</a>
+    </div>  
 </div>    
 <div class="item">
+    <div class="challenge"> 
       <h3>b64</h3>
       <a href="./data/encode.txt" download>file</a>
+    </div>  
 </div>
 <div class="item">
+    <div class="challenge"> 
       <h3>easy</h3>
       <a href="./data/easy.txt" download>file</a>
+    </div>  
 </div>
 <div class="item"> 
+    <div class="challenge"> 
       <h3>unknown</h3>
-      <h4>What the file is it?<h4>
       <a href="./data/FLAG" download>file</a>
+    </div>  
 </div>    
-<div class="item">  
+<div class="item">
+    <div class="challenge">   
       <h3>find</h3>
-      <h4>find the flag<h4>
       <a href="./data/find.zip">file</a>
+    </div>  
 </div>
-<div class="item">  
+<div class="item">
+    <div class="challenge">   
       <h3>nc</h3>
       <a href="./data/nc.txt" download>file</a>
+     </div> 
 </div>
-<div class="item">  
+<div class="item">
+    <div class="challenge">   
       <h3>pusheen</h3>
-      <h4>pushenn is cute. Do you like pusheen ?<h4>
       <a href="./data/pusheen.txt" download>file</a>
+     </div> 
 </div>
 <div class="item">  
+    <div class="challenge"> 
       <h3>pwn</h3>
-      <h4>just pwn it<h4>
       <a href="./data/pwn">file</a>
+    </div>  
 </div>
-<div class="item">  
+<div class="item">
+    <div class="challenge">   
       <h3>strings</h3>
       <a href="./data/strings">file</a>
+     </div> 
 </div> 
 <div class="item">  
+    <div class="challenge"> 
       <h3>xor</h3>
       <a href="./data/xor.c" download>file</a>
+    </div>  
 </div> 
-<div class="item">  
+<div class="item">
+    <div class="challenge">   
       <h3>cookie</h3>
-      <h4>yummy<h4>
       <a href="http://sv.duckll.tw:1337">link</a>
+    </div>  
 </div>
-<div class="item">  
+<div class="item">
+    <div class="challenge">   
       <h3>hide</h3>
       <a href="http://sv.duckll.tw:1337/hide.html">link</a>
+    </div>  
 </div>                    
 <?php
 /*
@@ -130,6 +151,12 @@ while($row = $rs->fetch()){
 <div style="clear:both;"></div>
       </div>
     </div>
-    <p>&copy; DUCKLL<p>
+    <!-- Footer -->
+    <footer style="background-color: black">
+      <div class="container">
+        <p class="m-0 text-center" style="color:white">Copyright &copy; DUCKLL</p>
+      </div>
+      <!-- /.container -->
+    </footer>
   </body>
 </html>
