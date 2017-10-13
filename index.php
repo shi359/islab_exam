@@ -140,7 +140,7 @@ while($row = $rs->fetch()){
         echo '<div class="item pass">';
     else
         echo '<div class="item">';
-    echo '<div> class="challenge"'.'</div>';
+    echo '<div class="challenge">';
     echo '<h3>'.$row['name'].'</h3>';
     echo $row['content'];
     echo '</div>'
