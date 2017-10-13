@@ -20,6 +20,9 @@ div{
 td{
     text-align: center;
 }
+th{
+    text-align: center;
+}
 
 .starter-template {
 	padding: 40px 15px;
