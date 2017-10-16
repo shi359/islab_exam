@@ -47,7 +47,7 @@ require_once('database.php');
             <input class="form-control" type="password" name="pass" required>
             <label>認證碼</label>
             <input class="form-control" name="code" required>
-            <input type="submit"  class="btn btn-primary"  id="submit" value="送出" style="float:right;">
+            <input type="submit"  class="submit"  id="submit" value="送出" style="float:right;">
         </form>
       </div>
     </div>
