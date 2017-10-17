@@ -52,7 +52,7 @@ require_once('database.php');
       </div>
     </div>
      <!-- Footer -->
-    <footer style="background-color: black">
+    <footer style="background-color: black; position: fixed; bottom: 0px; width: 100%;">
       <div class="container">
         <p class="m-0 text-center" style="color:white">Copyright &copy; DUCKLL</p>
       </div>
