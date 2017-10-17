@@ -130,8 +130,3 @@ th{
 .hint:hover .hint_content{
     opacity: 1;
 }
-
-.hint_pass{
-    color: #008800;
-    background-color: #CCFF99;
-}

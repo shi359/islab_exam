@@ -75,18 +75,19 @@ while($row = $rs->fetch()){
         echo '<div class="challenge">';
     }
     echo '<h3>'.$row['name'].'</h3>';
-    echo $row['content'];
     if($_SESSION['q'.$row['qid']]==1)
-        echo '<div class="hint hint_pass">';
+    {
+        
+    }
     else
+    {
+        echo $row['content'];
         echo '<div class="hint">';
-    echo 'HINT<br>';
-    if($_SESSION['q'.$row['qid']]==1)
-        echo '<div class="hint_content hint_pass">';
-    else
+        echo 'HINT<br>';
         echo '<div class="hint_content">';
-    echo $row['hint'].'</div>';
-    echo '</div>';
+        echo $row['hint'].'</div>';
+        echo '</div>';
+    }
     echo '</div>';
     echo '</div>';
 }
