@@ -72,7 +72,7 @@ while($row = $rs->fetch()){
 </thead>
 <tbody>
 <?php
-$sql="SELECT * FROM member ORDER BY point DESC, submit_time";
+$sql="SELECT * FROM member ORDER BY point DESC, submit_time ASC";
 $rs = $db->query($sql);
 $rank=1;
 while($row = $rs->fetch()){
