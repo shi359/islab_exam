@@ -7,7 +7,7 @@ if(isset($_SESSION['name'])){
         $q=$row['qid'];
         if($_SESSION['q'.$q]==1){
             echo "<script type=\"text/javascript\">";
-            echo 'alert("passed!");';
+            echo 'alert("duplicate flag");';
             echo "history.go(-1);";
             echo "</script>";
             exit();
