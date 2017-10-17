@@ -26,7 +26,7 @@ require_once('database.php');
             <span class="icon-bar"></span>
           </button>
           <div id="NAVbrand" class="navbar-brand" style="padding-top:6px;">
-            <span class="title-span"> ISLAB_CTF</span>
+            <span class="title-span">ISLAB_CTF</span>
           </div>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -59,100 +59,43 @@ else{
 <input name="flag" placeholder="Send flag here like FLAG{***}" required style="width:90%;">
 <input type="submit" style="float:right;" class="submit" value="send">
 </form>
-<div class="item">
-    <div class="challenge">      
-      <h3>AA</h3>
-      <a href="./data/aa.txt" download>file</a>
-    </div>  
-</div>    
-<div class="item">
-    <div class="challenge"> 
-      <h3>b64</h3>
-      <a href="./data/encode.txt" download>file</a>
-    </div>  
-</div>
-<div class="item">
-    <div class="challenge"> 
-      <h3>easy</h3>
-      <a href="./data/easy.txt" download>file</a>
-    </div>  
-</div>
-<div class="item"> 
-    <div class="challenge"> 
-      <h3>unknown</h3>
-      <a href="./data/FLAG" download>file</a>
-    </div>  
-</div>    
-<div class="item">
-    <div class="challenge">   
-      <h3>find</h3>
-      <a href="./data/find.zip">file</a>
-    </div>  
-</div>
-<div class="item">
-    <div class="challenge">   
-      <h3>nc</h3>
-      <a href="./data/nc.txt" download>file</a>
-     </div> 
-</div>
-<div class="item">
-    <div class="challenge">   
-      <h3>pusheen</h3>
-      <a href="./data/pusheen.txt" download>file</a>
-     </div> 
-</div>
-<div class="item">  
-    <div class="challenge"> 
-      <h3>pwn</h3>
-      <a href="./data/pwn">file</a>
-    </div>  
-</div>
-<div class="item">
-    <div class="challenge">   
-      <h3>strings</h3>
-      <a href="./data/strings">file</a>
-     </div> 
-</div> 
-<div class="item">  
-    <div class="challenge"> 
-      <h3>xor</h3>
-      <a href="./data/xor.c" download>file</a>
-    </div>  
-</div> 
-<div class="item">
-    <div class="challenge">   
-      <h3>cookie</h3>
-      <a href="http://sv.duckll.tw:1337">link</a>
-    </div>  
-</div>
-<div class="item">
-    <div class="challenge">   
-      <h3>hide</h3>
-      <a href="http://sv.duckll.tw:1337/hide.html">link</a>
-    </div>  
-</div>                    
+                  
 <?php
-/*
 $sql="SELECT * FROM flag WHERE open=1 ORDER BY qid";
 $rs = $db->query($sql);
 while($row = $rs->fetch()){
     if($_SESSION['q'.$row['qid']]==1)
+    {
         echo '<div class="item pass">';
+        echo '<div class="challenge pass">';
+    }
     else
+    {
         echo '<div class="item">';
-    echo '<div class="challenge">';
+        echo '<div class="challenge">';
+    }
     echo '<h3>'.$row['name'].'</h3>';
     echo $row['content'];
-    echo '</div>'
+    if($_SESSION['q'.$row['qid']]==1)
+        echo '<div class="hint hint_pass">';
+    else
+        echo '<div class="hint">';
+    echo 'HINT<br>';
+    if($_SESSION['q'.$row['qid']]==1)
+        echo '<div class="hint_content hint_pass">';
+    else
+        echo '<div class="hint_content">';
+    echo $row['hint'].'</div>';
+    echo '</div>';
+    echo '</div>';
     echo '</div>';
 }
-*/
 ?> 
 <div style="clear:both;"></div>
       </div>
     </div>
     <!-- Footer -->
-    <footer style="background-color: black">
+    <footer style="background-color: black;">
       <div class="container">
         <p class="m-0 text-center" style="color:white">Copyright &copy; DUCKLL</p>
       </div>

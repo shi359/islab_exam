@@ -26,7 +26,7 @@ require_once('database.php');
             <span class="icon-bar"></span>
           </button>
           <div id="NAVbrand" class="navbar-brand" style="padding-top:6px;">
-            <span class="title-span"> ISLAB_CTF</span>
+            <span class="title-span">ISLAB_CTF</span>
           </div>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -59,18 +59,13 @@ else{
 <tr>
 <th>#</th>
 <th>id</th>
-<th>AA</th>
-<th>b64</th>
-<th>easy</th>
-<th>unknown</th>
-<th>find</th>
-<th>nc</th>
-<th>pusheen</th>
-<th>pwn</th>
-<th>strings</th>
-<th>xor</th>
-<th>cookie</th>
-<th>hide</th>
+<?php
+$sql="SELECT * FROM flag ORDER BY qid";
+$rs = $db->query($sql);
+while($row = $rs->fetch()){
+    echo '<th>'.$row['name'].'</th>';
+}
+?>
 <th>point</th>
 </tr>
 </thead>
@@ -80,7 +75,10 @@ $sql="SELECT * FROM member ORDER BY point DESC";
 $rs = $db->query($sql);
 $rank=1;
 while($row = $rs->fetch()){
-    echo '<tr>';
+    if($_SESSION['name'] == $row['name'])
+        echo '<tr style="color:#FF0000">';
+    else 
+        echo '<tr>';
     echo '<th>'.$rank.'</th>';
     echo '<th>'.$row['name'].'</th>';
     for($i=1;$i<13;$i++){
@@ -99,7 +97,7 @@ while($row = $rs->fetch()){
       </div>
     </div>
      <!-- Footer -->
-    <footer style="background-color: black">
+    <footer style="background-color: black;">
       <div class="container">
         <p class="m-0 text-center" style="color:white">Copyright &copy; DUCKLL</p>
       </div>

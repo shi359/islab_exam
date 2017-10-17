@@ -2,16 +2,16 @@
 error_reporting(E_ERROR | E_PARSE);
 session_start();
 header("Content-type: text/html; charset=utf-8");
-
-$dsn='pgsql:dbname=d94c0f0fe9aup4;host=ec2-107-22-235-167.compute-1.amazonaws.com';
-$user='zofbdabdyzxzsp';
-$password='71ffdd38229703c9b8c1a4581230f7b4317fe99b9c56a3f0b29f9892d7979e76';
+ 
+$dsn='pgsql:dbname=dv2lnfb91mt9c;host=ec2-54-204-41-80.compute-1.amazonaws.com';
+$user='fynkvgkqferzxy';
+$password='fc35718fda445b9b356176a1a75d93d46935437eaee3c21d8b92d95611210980';
 try{
-	$db=new PDO($dsn,$user,$password);
-	$db->exec("set names utf8");
+    $db=new PDO($dsn,$user,$password);
+    $db->exec("set names utf8");
 }
 catch(PDOException $e){
-	die($e->getMessage());
+    die($e->getMessage());
 }
-
+ 
 ?>

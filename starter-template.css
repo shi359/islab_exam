@@ -28,7 +28,6 @@ th{
 	padding: 40px 15px;
 	text-align: left;
 	font-size: large;
-	/*background-color:#999;*/
 
 	border-radius: 10px;  /*圓角*/
 
@@ -39,6 +38,7 @@ th{
 .title-span{
     font-size: 20px;
     line-height: 35px;
+    cursor: default;
 }
 .ep_like {
     display: block;
@@ -52,6 +52,7 @@ th{
     white-space: nowrap;
 }
 .item {
+    position: relative;
     float: left;
     width: 22%;
     height: 200px;
@@ -60,9 +61,7 @@ th{
     background-color: #A9A9A9;
     overflow: hidden;
     text-overflow : ellipsis;
-}
-.pass{
-    background-color: #8f8;
+    cursor: default;
 }
 .challenge{
     text-align: center;
@@ -70,6 +69,10 @@ th{
     font-family: cursive;
     height: 150px;
 
+}
+.pass{
+    color: #008800;
+    background-color: #8f8;
 }
 .submit {
     border: none;
@@ -88,6 +91,47 @@ th{
     padding: 3px 20px;
     margin-left: 5px; 
     color: white;
-    cursor: pointer;
+    cursor: default;
 }
 
+.hint{
+    position: relative;
+    left: 10%;
+    border: none;
+    background-color: #dddddd;
+	text-align: center;
+    color: #000000;
+	font-size: 15px;
+    width: 80%;
+    height: 20%;
+	border-radius: 10px;
+    -webkit-transition: 0.5s ease;
+    -moz-transition-property: height;
+    -webkit-transition-property: height;
+    -o-transition-property: height;
+    cursor: default;
+}
+
+.hint:hover{
+    width: 80%;
+    height: 60%;
+}
+
+.hint_content{
+    opacity: 0;
+    transition: opacity 0.3s;
+    -webkit-transition: 0.3s ease;
+    -moz-transition-property: opacity;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    cursor: default;
+}
+
+.hint:hover .hint_content{
+    opacity: 1;
+}
+
+.hint_pass{
+    color: #008800;
+    background-color: #CCFF99;
+}
