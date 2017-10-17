@@ -67,6 +67,7 @@ while($row = $rs->fetch()){
 }
 ?>
 <th>point</th>
+<th> last submit time</th>
 </tr>
 </thead>
 <tbody>
