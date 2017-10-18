@@ -72,7 +72,7 @@ while($row = $rs->fetch()){
 </thead>
 <tbody>
 <?php
-$sql="SELECT * FROM member ORDER BY point DESC, submit_time ASC";
+$sql="SELECT * FROM member ORDER BY point DESC, lasttime ASC";
 $rs = $db->query($sql);
 $rank=1;
 while($row = $rs->fetch()){
@@ -89,7 +89,7 @@ while($row = $rs->fetch()){
         echo '</th>';
     }
     echo '<th>'.$row['point'].'</th>';
-    echo '<th>'.$row['submit_time'].'</th>';
+    echo '<th>'.$row['lasttime'].'</th>';
     echo '</tr>';
     $rank++;
 }

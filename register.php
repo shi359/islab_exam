@@ -8,8 +8,8 @@ if($_POST['code']!='islab2017'){
 	exit;
 }
 else{
-    $rs=$db->prepare("SELECT count(*) FROM member WHERE name =?");
-    $rs = $db->execute(array($_POST['name']));
+    $rs= $db->prepare("SELECT count(*) FROM member WHERE name =?");
+    $rs->execute(array($_POST['name']));
     $row = $rs->fetch();
     if($row[0]==1){
         echo "<script type=\"text/javascript\">";
@@ -20,7 +20,7 @@ else{
     }
     else{
         $hashpassword=md5(sha1(md5($_POST['pass'])));
-        $rs = $db->prepare("INSERT INTO member (name, pass) VALUES ('?', '?')");
+        $rs = $db->prepare("INSERT INTO member (name, pass) VALUES (?, ?)");
         $rs->execute(array($_POST['name'], $hashpassword));
         echo "<script type=\"text/javascript\">";
         echo 'alert("註冊成功!");';

@@ -81,7 +81,8 @@ while($row = $rs->fetch()){
     }
     else
     {
-        echo $row['content'];
+        echo $row['content'].'<br>';
+        echo 'points:'.$row['point'];
         echo '<div class="hint">';
         echo 'HINT<br>';
         echo '<div class="hint_content">';
